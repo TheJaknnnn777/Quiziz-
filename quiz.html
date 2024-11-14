@@ -1,0 +1,121 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>By The Rok</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background: #000;
+                margin: 0;
+                padding: 0;
+                color: #00ff00;
+                overflow: hidden;
+                height: 100vh;
+                display: flex;
+                flex-direction: row;
+            }
+            h1 {
+                text-align: center;
+                color: #00ff00;
+                font-size: 3.5em;
+                margin-top: 50px;
+                text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+                padding: 10px;
+            }
+            .content-wrapper {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+            }
+            .quiz-content {
+                position: relative;
+                margin: 20px auto;
+                width: 95%;
+                max-width: 1500px;
+                padding: 70px;
+                background: rgba(0, 0, 0, 0.7);
+                border-radius: 25px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                line-height: 2.2;
+                font-size: 32px;
+                color: #fff;
+                border: 4px solid #00ff00;
+                z-index: 1;
+                overflow-y: auto;
+                height: 90vh;
+            }
+            .quiz-content p {
+                background-color: #111;
+                padding: 30px;
+                border-radius: 20px;
+                margin-bottom: 30px;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            }
+            .quiz-content p:hover {
+                transform: scale(1.05);
+                background-color: #333;
+            }
+            .quiz-content b {
+                color: #00ff00;
+                font-weight: bold;
+            }
+            .quiz-content i {
+                color: #1e90ff;
+                font-style: italic;
+            }
+            .quiz-content a {
+                color: #00ff7f;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+            .quiz-content a:hover {
+                color: #ffd700;
+            }
+            .sidebar {
+                width: 30%;
+                background-color: #111;
+                padding: 20px;
+                color: #fff;
+                border-left: 2px solid #00ff00;
+                height: 80vh;
+                overflow-y: scroll;
+                display: none;
+            }
+        </style>
+        <script>
+            // Check the time and display error message after 04.08
+            window.onload = function() {
+                var now = new Date();
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                if (hours > 20 || (hours === 04 && minutes >= 8)) {
+                    document.body.innerHTML = "<h1 style='color:red; text-align:center; margin-top: 20%;'>Error: Quiz is unavailable after 20:08</h1>";
+                } else {
+                    var userConfirmed = confirm("Please enable Desktop Mode to view the quiz. Click OK to proceed.");
+                    if (!userConfirmed) {
+                        window.location.href = "about:blank";
+                    }
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <h1>By The JAk
+        Send Me Question Quiziz For Get Answe...
+       damayedry@bangban.uk</h1>
+        <div class="content-wrapper">
+            <div class="quiz-content">
+                1.<p>.......... berarti suatu kejadian yang bersifat nyata.<p><p>Faktual<p>2.<p>........... berarti kejadian yang bersifat baru.<p><p>Aktual<p>3.<p>Pernyataan yang tepat tentang teks berita ialah...<p><p>Teks yang melaporkan kejadian dan peristiwa atau informasi mengenai sesuatu yang telah atau sedang terjadi secara aktual dan faktual.<p><p>4.<p>Pemain ganda campuran Indonesia, Tontowi Ahmad / Liliyana Natsir, menyumbang medali emas setelah menang atas wakil Malaysia, Chan Peng Soon / Goh Liu Ying, tepat pada hari ulang tahun kemerdekaan, Rabu (17/8/2016)<p><p><p><p>Pertanyaan yang tidak sesuai dengan cuplikan berita di atas adalah ....<p><p>Bagaimana proses terjadinya peristiwa tersebut?<p><p>5.<p>Perpanjangan PPKM ini dilakukan karena dinilai efektif dalam menekan laju kasus penularan covid-19.<p><p><p><p>Kalimat tersebut termasuk ke dalam unsur ....<p><p>mengapa<p><p>6.<p>Unsur-unsur sebuah berita yang benar adalah ....<p><p>Apa, Di mana, Kapan, Siapa, Mengapa, Bagaimana<p><p>7.<p>Struktur teks berita secara urut adalah...<p><p>Kepala berita, badan berita, ekor berita<p><p>8.<p>Kalimat yang digunakan dalam teks berita adalah..<p><p>efektif<p><p>9.<p>BACALAH BERITA DIBAWAH INI<p><p>Bulus berukuran jumbo yang ditemukan warga di sekitar lokasi terowongan kuno di Dusun Samber, Desa Sabrang Lor, Kecamatan Trucuk, Klaten, Jawa Tengah, diperkirakan berusia sekitar 100 tahun. Hal itu diperkirakan berdasarkan ukuran hewan tersebut yang cukup besar dan beratnya sekitar 20 kg. (Sumber: Solopos.com, 7-9-2021).<p><p>Topik teks berita di atas adalah.....<p><p>Umur bulus jumbo yang ditemukan di sekitar lokasi terowongan kuno Dusun Samber, Sabrang Lor, Trucuk, Klaten.<p><p>10.<p>Perhatikan langkah-langkah berikut!<p><p>1) Temukan peristiwa atau kejadian<p>2) Pencatatan informasi penting<p>3) Pelaksanaan wawancara<p>4) Pencarian sumber berita<p>5) Penyusunan berita<p><p>Urutan langkah-langkah penyusunan berita yang tepat adalah ….<p><p>1) – 4) – 3) – 2) – 5)<p><p>11.<p>Unsur yang menanyakan pelaku dalam suatu kejadian adalah . . .<p><p>Siapa<p><p>12.<p>Pada bagian awal berita disebut sebagai bagian . . .<p><p>Kepala berita<p><p>13.<p>Struktur teks berita terdiri dari. . .<p><p>Kepala berita, tubuh berita, dan kaki berita<p><p>14.<p>Unsur dalam sebuah teks berita disebut ADIKSIMBA yang terdiri atas . . .<p><p>Apa, Dimana, Kapan, Siapa, Mengapa, dan Bagaimana<p><p>15.<p>Perhatikan ciri-ciri di bawah ini!<p><p>(1) memuat informasi faktual<p><p>(2) berisi tentang pandangan penulis<p><p>(3) memuat kronologi terjadinya suatu kejadian<p><p>(4) bertujuan untuk mempromosikan barang atau jasa<p><p>Ciri-ciri teks berita ditandai oleh nomor . . .<p><p>(1) dan (3)<p><p>16.<p>Teks berita bersifat faktual. Apa yang dimaksud faktual . . .<p><p>Berdasarkan kenyataan<p><p>17.<p>Perhatikan teks berita dibawah ini!<p><p>Pihak pengelola objek wisata Grojogan Sewu, Tawangmangu, Kabupaten Karanganyar, Jawa Tengah telah melaksanakan simulasi bersifat terbatas mengenai operasionalnya tanpa ada keterlibatan pengunjung, pada Minggu (6/7/2020).<p>Simulasi ini memiliki tujuan untuk mendapatkan izin resmi untuk operasional dari BKSDA (Badan Konservasi Sumber Daya Alam) Provinsi Jawa Tengah. (Sumber: manapos.com, 6-7-2020).<p><p>Berdasarkan teks berita di atas, mengapa pihak pengelola melakukan simulasi terbatas?<p><p>Supaya dapat izin operasional dari BKSDA<p><p>18.<p>Bacalah teks berikut!<p><p>Sebuah mobil tertimpa lampu jalanan di kawasan Jalan Purworejo Menteng, Jakarta, Senin (27/11). Akibat hujan deras dan angin kencang sebuah pohon tumbang dan lampu jalanan mengenai mobil putih yang terparkir.<p><p>Struktur yang membangun teks berita tersebut adalah...<p><p>Kepala berita<p><p><p>19.<p>Bacalah teks berikut untuk menjawab pertanyaan di bawah ini!<p><p>Persamaan isi kedua tels berita tersebut adalah...<p><p>Dampak banjir terhadap kondisi lalu lintas di jalan nasional Bandung-Garut<p><p><p>20.<p>Pokok bahasan pada teks 2 adalah...<p><p>Pengalihan arus kendaraan selama banjir di jalan nasional Bandung-Garut<p><p><p>21.<p>Pernyataan berikut yang berisi informasi penting dalam teks 1 adalah...<p><p>Pasangan ganda putra Indonesia berhasil meraih juara pada ajang All England 2017<p><p>22.<p>Bacalah kalimat berikut!<p><p>Pulau Jawa memiliki penduduk yang bersifat heterogen, tetapi mereka dapat hidup dengan rukun.<p><p>Makna kata “heterogen” dalam kalimat tersebut adalah...<p><p>Beraneka ragam<p><p>23.<p>Pengelola objek wisata Grojogan Sewu, Tawangmangu, Karanganyar, melaksanakan simulasi terbatas operasional objek wisata tanpa melibatkan pengunjung. Minggu (5/9/2021). Simulasi ini dilakukan sebagai upaya mendapatkan izin operasional dari Balai Konservasi Sumber Daya Alam (BKSDA) Jawa Tengah.<p><p>Sumber: Solopos.com, 5-9-2021<p><p>Mengapa pengelola objek wisata Grojogan Sewu menggelar simulasi terbatas operasional objek wisata...<p><p>Agar mendapat izin operasional dari Balai Konservasi Sumber Daya Alam Jawa Tengah<p><p>24.<p>berita juga berisikan data-data yang sangat nyata benar terjadinya, pada keterangan ini bararti data yang diperoleh berita harus?<p><p>akurat<p><p>25.<p>struktur teks berita terdiri dari?<p><p>judu,pembuka,perangkat,tubuh berita,kaki berita<p><p>26.<p>yang dimaksut dengan unsur "siapa" dalam teks berita adalah<p><p>orang yang terlibat dalam berita<p><p>27.<p>apa yang dinamakan dengan teks berita?<p><p>teks yang berisi sebuah infomasi<p><p>28.<p>unsur utama yang ada pada teks berita adalah?<p><p>apa,siapa,kapan,bagaimana,mengapa,dimana<p><p>29.<p>fungsi judul dalam teks berita adalah?<p><p>menarik perhatian pembaca dan memberi gambaran singakat tentang berita<p><p>30.<p>Teks yang berisi peristiwa terkini atau aktual disebut...<p><p>Teks Berita<p><p>31.<p>Teks berita disajikan dalam bentuk...<p><p>Narasi<p><p>32.<p>(1)   Berbagai pihak mulai sibuk menyongsong Ujian Nasional SMP 2010. (2) Salah satunya adalah kesibukan Direktorat Pembinaan SMP menyelenggarakan kegiatan Pendalaman Materi UN bagi Tim Pengembang Kurikulum. (3) Dinas Pendidikan di daerah-daerah juga sibuk melakukan sosialisasi ke satuan pendidikan tentang pelaksanaan UN yang akan dilaksanakan akhir Maret . (4) Begitu juga, sekolah-sekolah mulai giat mengadakan kegiatan belajar tambahan untuk siswa kelas IX.<p><p>Kalimat utama paragraf tersebut ditandai dengan nomor ….<p><p>(1)<p><p>33.<p>Bacalah paragraf berikut!<p><p>Balai Konservasi Sumber Daya Alam (BKSDA) Sulawesi Tenggara menyurvei dua satwa endemik Sulawesi, yakni anoa dan burung maleo. Aktivitas itu dimaksudkan untuk mengetahui jumlah pasti populasi kedua hewan dilindungi tersebut. Survei menggunakan metode sampling di kawasan suaka margasatwa Tanjung Peropa dan Buton Utara.<p><p>Gagasan utama paragraf tersebut adalah ….<p><p>survei satwa endemik Sulawesi<p><p>34.<p>Bacalah kutipan berita berikut kemudian kerjakan soal nomor 7 dan 8!<p><p>Teks berita I<p><p>Sekitar 7.000 hektar hutan mangrove hancur di kawasan Laguna Segara Anakan, Kabupaten Cilacap, Jawa tengah. Kasus itu terjadi sejak tahun 1984 sehingga menghancurkan berbagai biota laut dan tempat pemijahan puluhan jenis ikan. Bahkan, kondisi tersebut ikut mengancam ekosistem perairan selatan Jawa dan kepunahan hutan mangrove.<p><p>Teks berita II<p><p>Warga pendatang dari Ciamis, Jawa Barat, membabati mangrove. Bahkan mereka menggarap tanah timbul menjadi areal pertanian. Penebangan liar juga dilakukan guna memanfaatkan kayu mangrove sebagai material bahan bangunan. Hal itu menyebabkan hutan  mangrove semakin terancam kepunahan.<p><p>Kesamaan informasi teks berita tersebut adalah ….<p><p> terancam punahnya hutan mangrove<p><p>35.<p>Musim kemarau yang cukup panjang tahun ini mulai membawa dampak. Para peternak sapi potong mulai resah karena kesulitan untuk memperoleh rumput. Rumput sulit didapatkan karena kekurangan air yang menyebabkan rumput meranggas. Kekurangan ladang rumput tersebut menjadi penyebab minimnya jumlah populasi sapi potong di Jawa Tengah.<p><p>Unsur what (apa) yang disampaikan dalam teks berita di atas adalah ....<p><p>Para peternak sapi potong mulai resah karena kesulitan memperoleh rumput.<p><p>36.<p>Agar dapat memahami pokok-pokok permasalahan yang disimak, sambil menyimak kita dapat ....<p><p>Mencatat pokok permasalahan yang di simak<p><p>37.<p>Dalam membaca naskah berita sebaiknya suara kita . . . .<p><p>Disesuaikan dengan tempat dan jumlah pendengar<p><p>38.<p>Meliput sebuah peristriwa yang sedang terjadi serta memberikan informasi tentang kebenaran pada public adalah tugas . . .<p><p>Jurnalis<p><p>39.<p>Sebutkan struktur dasar dari sebuah berita!<p><p>Judul, lead, isi berita, penutup.<p><p>40.<p>Apa fungsi utama dari berita dalam masyarakat?<p><p>menyampaikan informasi dan mendidik masyarakat.<p><p>41.<p>Dari mana saja sumber berita dapat diperoleh?<p><p>Media massa, situs berita online, media sosial, sumber langsung.<p><p>42.<p>Jelaskan gaya penulisan yang sering digunakan dalam berita!<p><p>Gaya penulisan berita adalah objektif, jelas, dan ringkas.<p><p>43.<p>Apa perbedaan antara berita hard news dan soft news?<p><p>hard news menyajikan informasi faktual dan penting secara langsung, soft news lebih fokus pada cerita ringan dan hiburan.<p><p>44.<p>Sebutkan elemen penting yang harus ada dalam berita!<p><p>siapa, apa, di mana, kapan, mengapa, dan bagaimana.<p><p>45.<p>Mengapa verifikasi sumber berita sangat penting?<p><p>Verifikasi sumber berita mencegah penyebaran informasi yang salah.<p><p>46.<p>Apa yang dimaksud dengan lead dalam penulisan berita?<p><p>Lead adalah bagian pembuka berita yang menyajikan informasi penting dan menarik.<p><p>47.<p>Bagaimana cara menilai kredibilitas sebuah berita?<p><p>Periksa sumber, cek fakta, analisis penulis, bandingkan dengan sumber lain.<p><p>48.<p>Apa ciri kebahasaan yang sering ditemukan dalam teks berita?<p><p>Penggunaan bahasa formal, objektif, jelas, dan faktual<p><p>49.<p>Apa fungsi utama dari berita dalam masyarakat?<p><p>menyampaikan informasi dan mendidik masyarakat.<p><p>50.<p>Dari mana saja sumber berita dapat diperoleh?<p><p>Media massa, situs berita online, media sosial, sumber langsung.
+            </div>
+            <div class="sidebar">
+                <!-- Sidebar is now hidden -->
+            </div>
+        </div>
+    </body>
+    </html>
+    
